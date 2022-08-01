@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    >
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:orientation="vertical"
+       android:weightSum="2"
+       android:layout_marginBottom="22dp"
+       >
+        <RelativeLayout
+            android:id="@+id/productin"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="5dp"
+            android:background="#0E3155"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_marginBottom="6dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/productin" />
+                <TextView
+                    android:textSize="32sp"
+                    android:layout_marginTop="31dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:text="@string/productin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/productverify"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="6dp"
+           android:background="#8293A5"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1">
+           <LinearLayout
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_gravity="center_horizontal"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@mipmap/productverify" />
+               <TextView
+                   android:textSize="32sp"
+                   android:layout_marginTop="31dp"
+                   android:layout_gravity="center_horizontal"
+                   android:textColor="#fff"
+                   android:text="@string/productverify"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+       </RelativeLayout>
+
+   </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginBottom="22dp"
+        >
+        <RelativeLayout
+            android:id="@+id/productout"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"
+            android:background="#A79462"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/productout" />
+                <TextView
+                    android:textSize="32sp"
+                    android:layout_marginTop="31dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:text="@string/productout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/queryinfo"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+
+            android:background="#757262"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/queryinfo" />
+                <TextView
+                    android:textSize="32sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:text="@string/queryinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,8 +1,10 @@
-package com.app.aimosheng;
+package com.app.aimosheng.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.app.aimosheng.R;
 
 public class MainActivity extends AppCompatActivity {
 

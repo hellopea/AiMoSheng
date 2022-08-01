@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">AiMoSheng</string>
+    <!-- Strings used for login activity-->
+    <string name="logininfos">账号密码登录</string>
+    <string name="loginaccount">请输入账号</string>
+    <string name="loginpw">请输入密码</string>
+    <string name="login">登录</string>
+
+    <!-- Strings used for menu activity -->
+    <string name="productin">成品入库</string>
+    <string name="productout">成品出库</string>
+    <string name="productverify">成品复核</string>
+    <string name="queryinfo">信息查询</string>
+
+
 </resources>
