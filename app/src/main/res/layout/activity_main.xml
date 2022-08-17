@@ -7,6 +7,17 @@
     android:background="#0E3155"
     tools:context=".activity.MainActivity">
 
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginRight="24dp"
+        android:background="#DCA100"
+        android:text="@string/login"
+        android:textSize="18sp" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,61 +29,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="289dp"
+        android:layout_marginTop="253dp"
         android:layout_marginRight="24dp"
         android:background="#ff0e3155"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="14dp"
-            android:src="@mipmap/account" />
 
-
-        <RelativeLayout
+        <EditText
+            android:text="123"
+            android:padding="8dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="12dp"
-                android:hint="@string/loginaccount"
-                android:textColorHint="#9EA6AF"
-                 android:textSize="14sp"/>
-        </RelativeLayout>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="353dp"
-        android:layout_marginRight="24dp"
-        android:background="#ff0e3155"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="14dp"
-            android:src="@mipmap/lock" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="12dp"
+            android:background="#264666"
+            android:drawableLeft="@mipmap/lock"
             android:hint="@string/loginpw"
+            android:id="@+id/password"
             android:textColorHint="#9EA6AF"
+            android:drawablePadding="14dp"
             android:textSize="14sp" />
 
 
@@ -84,24 +58,53 @@
         android:drawableLeft="@mipmap/account"
         android:drawableTop="14dp" />-->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="209dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="#ff0e3155"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/account"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#264666"
+                android:drawableLeft="@mipmap/account"
+                android:drawablePadding="14dp"
+                android:hint="@string/loginaccount"
+                android:textColorHint="#9EA6AF"
+                android:textSize="14sp"
+                android:text="1"
+                />
+        </LinearLayout>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/clear_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/clear"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="128dp"
         android:text="@string/logininfos"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/login"
-        android:textSize="18sp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginTop="437dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#DCA100"
-        android:text="@string/login" />
-    
 </RelativeLayout>

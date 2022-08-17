@@ -1,35 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MenuActivity">
+    android:weightSum="2"
+    android:orientation="horizontal"
+    >
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:theme="@style/Theme.AiMoSheng.AppBarOverlay">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginBottom="22dp"
+        >
+        <RelativeLayout
+            android:id="@+id/productin"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="5dp"
+            android:background="#0E3155"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.AiMoSheng.PopupOverlay" />
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_marginBottom="6dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    </com.google.android.material.appbar.AppBarLayout>
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/productin" />
+                <TextView
+                    android:textSize="24sp"
+                    android:layout_marginTop="31dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:text="@string/productin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
-    <include layout="@layout/content_menu"/>
+            </LinearLayout>
+        </RelativeLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:id="@+id/productverify"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:background="#8293A5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/productverify" />
+                <TextView
+                    android:textSize="24sp"
+                    android:layout_marginTop="31dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:text="@string/productverify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginBottom="22dp"
+        >
+        <RelativeLayout
+            android:layout_marginRight="12dp"
+
+            android:id="@+id/productout"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"
+            android:background="#A79462"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/productout" />
+                <TextView
+                    android:textSize="24sp"
+                    android:layout_marginTop="31dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:text="@string/productout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="12dp"
+            android:id="@+id/queryinfo"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+
+            android:background="#757262"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/queryinfo" />
+                <TextView
+                    android:textSize="24sp"
+                    android:layout_marginTop="31dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:text="@string/queryinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

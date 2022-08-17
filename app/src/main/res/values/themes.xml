@@ -14,9 +14,17 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.AiMoSheng.NoActionBar">
-        <item name="windowActionBar">false</item>
+        <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.AiMoSheng.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.AiMoSheng.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="Theme.AiMoSheng.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

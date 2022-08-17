@@ -12,5 +12,29 @@
     <string name="productverify">成品复核</string>
     <string name="queryinfo">信息查询</string>
 
+    <!-- Strings used for productin activity -->
+    <string name="productinmanage">成品入库管理</string>
+    <string name="productposition">库位：</string>
+    <string name="scanning">扫描：</string>
+    <string name="sonumber">so单号：</string>
+    <string name="barcode">条码：</string>
+    <string name="number">数量：</string>
+    <string name="commitproductin">提交入库</string>
+    <string name="commitproductout">提交出库</string>
+
+    <!-- Strings used for productoutdetail activity -->
+    <string name="productoutmanage">成品出库明细</string>
+    <string name="customerno">客户编号</string>
+    <string name="customername">客户名称</string>
+    <string name="partno">Part No</string>
+    <string name="no">数量</string>
+    <string name="allocated">已配</string>
+    <string name="clear">清除</string>
+    <string name="query">查询</string>
+    <string name="outcustomlist">出库客户列表</string>
+
+    <!-- Strings used for qureyinfo activity -->
+    <string name="productno">物料编号：</string>
+    <string name="productpositionno">货位编号：</string>
 
 </resources>

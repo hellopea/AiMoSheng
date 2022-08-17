@@ -3,14 +3,15 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 29
 
     defaultConfig {
         applicationId "com.app.aimosheng"
-        minSdk 22
-        targetSdk 30
+        minSdk 14
+        targetSdk 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -28,6 +29,8 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -40,4 +43,13 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation "io.reactivex.rxjava3:rxjava:3.0.0"
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+    implementation 'com.google.zxing:core:3.2.0'
+    implementation 'com.android.support:multidex:1.0.3'
 }

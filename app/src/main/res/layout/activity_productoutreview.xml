@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="成品出库复核"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="#0E3155"
+            />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/exit_productverify"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/exit"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_weight="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="客户编号："
+                    android:textColor="#666"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <EditText
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/customno_review"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="客户名称："
+                    android:textColor="#666"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <EditText
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/customname_review"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:text="箱条码："
+                    android:id="@+id/position_review"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#666"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <EditText
+                    android:id="@+id/barcode_verify"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:hint="箱条码"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/tablayout_productverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_weight="2"
+        android:id="@+id/viewpager_productverify"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+</LinearLayout>
